@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ProxyListFetcher.h"
+#import "CMRPopupViewController.h"
 
-@interface CMRAppDelegate : NSObject <NSApplicationDelegate>
-
-@property (assign) IBOutlet NSWindow *window;
+@interface CMRAppDelegate : NSObject <NSApplicationDelegate> {
+ 
+    CMRPopupViewController*PVC;
+}
 
 @end

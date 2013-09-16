@@ -12,11 +12,33 @@
 		2A70997E17D76BA10015097C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70997D17D76BA10015097C /* main.m */; };
 		2A70998217D76BA10015097C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A70998017D76BA10015097C /* Credits.rtf */; };
 		2A70998517D76BA20015097C /* CMRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70998417D76BA20015097C /* CMRAppDelegate.m */; };
-		2A70998817D76BA20015097C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A70998617D76BA20015097C /* MainMenu.xib */; };
 		2A70999017D76BA30015097C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70998F17D76BA30015097C /* SenTestingKit.framework */; };
 		2A70999117D76BA30015097C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997117D76BA10015097C /* Cocoa.framework */; };
 		2A70999917D76BA30015097C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A70999717D76BA30015097C /* InfoPlist.strings */; };
 		2A70999C17D76BA30015097C /* ProxyfierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70999B17D76BA30015097C /* ProxyfierTests.m */; };
+		2A7099A817D76C320015097C /* AXStatusItemPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099A717D76C320015097C /* AXStatusItemPopup.m */; };
+		2A7099B117D782AE0015097C /* CMRPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099AF17D782AE0015097C /* CMRPopupViewController.m */; };
+		2A7099B217D782AE0015097C /* CMRPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099B017D782AE0015097C /* CMRPopupViewController.xib */; };
+		2A7099B717D783A80015097C /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099B317D783A80015097C /* cloud.png */; };
+		2A7099B817D783A80015097C /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099B417D783A80015097C /* cloud@2x.png */; };
+		2A7099B917D783A80015097C /* cloudgrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099B517D783A80015097C /* cloudgrey.png */; };
+		2A7099BA17D783A80015097C /* cloudgrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099B617D783A80015097C /* cloudgrey@2x.png */; };
+		2A7099D017D789040015097C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099CF17D789030015097C /* SystemConfiguration.framework */; };
+		2A7099DD17D789CD0015097C /* grad_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099DA17D789CD0015097C /* grad_rect.png */; };
+		2A7099DE17D789CD0015097C /* green_status.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099DB17D789CD0015097C /* green_status.png */; };
+		2A7099DF17D789CD0015097C /* red_status.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A7099DC17D789CD0015097C /* red_status.png */; };
+		2A7099E317D790250015097C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997617D76BA10015097C /* Foundation.framework */; };
+		2A7099E617D7913B0015097C /* EPProxyModifiy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099E517D7913A0015097C /* EPProxyModifiy.m */; };
+		2A7099E717D7913B0015097C /* EPProxyModifiy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099E517D7913A0015097C /* EPProxyModifiy.m */; };
+		2A7099E817D792140015097C /* EPProxyModifiy.h in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099E417D7913A0015097C /* EPProxyModifiy.h */; };
+		2A7099EA17D792A50015097C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099E917D792A50015097C /* Security.framework */; };
+		2A7099F917D799970015097C /* ProxyListFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099F817D799970015097C /* ProxyListFetcher.m */; };
+		2A7099FA17D799970015097C /* ProxyListFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099F817D799970015097C /* ProxyListFetcher.m */; };
+		2A7099FD17D79A420015097C /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099FC17D79A420015097C /* Proxy.m */; };
+		2A7099FE17D79A420015097C /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7099FC17D79A420015097C /* Proxy.m */; };
+		2A709A3017D9E1070015097C /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A709A2F17D9E1070015097C /* XMLDictionary.m */; };
+		2A709A3B17DB330B0015097C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A709A3A17DB330B0015097C /* MainMenu.xib */; };
+		2A709A4017DB48830015097C /* no_proxies_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A709A3F17DB48830015097C /* no_proxies_back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +64,36 @@
 		2A70998117D76BA10015097C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A70998317D76BA10015097C /* CMRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMRAppDelegate.h; sourceTree = "<group>"; };
 		2A70998417D76BA20015097C /* CMRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMRAppDelegate.m; sourceTree = "<group>"; };
-		2A70998717D76BA20015097C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A70998E17D76BA30015097C /* ProxyfierTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyfierTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70998F17D76BA30015097C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2A70999617D76BA30015097C /* ProxyfierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProxyfierTests-Info.plist"; sourceTree = "<group>"; };
 		2A70999817D76BA30015097C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A70999A17D76BA30015097C /* ProxyfierTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyfierTests.h; sourceTree = "<group>"; };
 		2A70999B17D76BA30015097C /* ProxyfierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyfierTests.m; sourceTree = "<group>"; };
+		2A7099A617D76C320015097C /* AXStatusItemPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXStatusItemPopup.h; sourceTree = "<group>"; };
+		2A7099A717D76C320015097C /* AXStatusItemPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXStatusItemPopup.m; sourceTree = "<group>"; };
+		2A7099AE17D782AE0015097C /* CMRPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRPopupViewController.h; sourceTree = "<group>"; };
+		2A7099AF17D782AE0015097C /* CMRPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRPopupViewController.m; sourceTree = "<group>"; };
+		2A7099B017D782AE0015097C /* CMRPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMRPopupViewController.xib; sourceTree = "<group>"; };
+		2A7099B317D783A80015097C /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		2A7099B417D783A80015097C /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
+		2A7099B517D783A80015097C /* cloudgrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudgrey.png; sourceTree = "<group>"; };
+		2A7099B617D783A80015097C /* cloudgrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudgrey@2x.png"; sourceTree = "<group>"; };
+		2A7099CF17D789030015097C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2A7099DA17D789CD0015097C /* grad_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grad_rect.png; sourceTree = "<group>"; };
+		2A7099DB17D789CD0015097C /* green_status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_status.png; sourceTree = "<group>"; };
+		2A7099DC17D789CD0015097C /* red_status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_status.png; sourceTree = "<group>"; };
+		2A7099E417D7913A0015097C /* EPProxyModifiy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPProxyModifiy.h; path = ../EPProxyModifiy.h; sourceTree = "<group>"; };
+		2A7099E517D7913A0015097C /* EPProxyModifiy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPProxyModifiy.m; path = ../EPProxyModifiy.m; sourceTree = "<group>"; };
+		2A7099E917D792A50015097C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2A7099F717D799970015097C /* ProxyListFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyListFetcher.h; sourceTree = "<group>"; };
+		2A7099F817D799970015097C /* ProxyListFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyListFetcher.m; sourceTree = "<group>"; };
+		2A7099FB17D79A420015097C /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		2A7099FC17D79A420015097C /* Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
+		2A709A2E17D9E1070015097C /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		2A709A2F17D9E1070015097C /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		2A709A3A17DB330B0015097C /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		2A709A3F17DB48830015097C /* no_proxies_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no_proxies_back.png; path = Proxyfier/no_proxies_back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7099EA17D792A50015097C /* Security.framework in Frameworks */,
+				2A7099E317D790250015097C /* Foundation.framework in Frameworks */,
+				2A7099D017D789040015097C /* SystemConfiguration.framework in Frameworks */,
 				2A70997217D76BA10015097C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +123,10 @@
 		2A70996517D76BA10015097C = {
 			isa = PBXGroup;
 			children = (
+				2A709A2D17D9E1070015097C /* XMLDictionary */,
+				2A7099E917D792A50015097C /* Security.framework */,
+				2A7099CF17D789030015097C /* SystemConfiguration.framework */,
+				2A7099CB17D788510015097C /* Resources */,
 				2A70997717D76BA10015097C /* Proxyfier */,
 				2A70999417D76BA30015097C /* ProxyfierTests */,
 				2A70997017D76BA10015097C /* Frameworks */,
@@ -114,9 +166,19 @@
 		2A70997717D76BA10015097C /* Proxyfier */ = {
 			isa = PBXGroup;
 			children = (
+				2A709A3A17DB330B0015097C /* MainMenu.xib */,
+				2A7099E517D7913A0015097C /* EPProxyModifiy.m */,
+				2A7099E417D7913A0015097C /* EPProxyModifiy.h */,
+				2A7099A517D76C320015097C /* AXStatusItemPopup */,
 				2A70998317D76BA10015097C /* CMRAppDelegate.h */,
 				2A70998417D76BA20015097C /* CMRAppDelegate.m */,
-				2A70998617D76BA20015097C /* MainMenu.xib */,
+				2A7099AE17D782AE0015097C /* CMRPopupViewController.h */,
+				2A7099AF17D782AE0015097C /* CMRPopupViewController.m */,
+				2A7099F717D799970015097C /* ProxyListFetcher.h */,
+				2A7099FB17D79A420015097C /* Proxy.h */,
+				2A7099FC17D79A420015097C /* Proxy.m */,
+				2A7099F817D799970015097C /* ProxyListFetcher.m */,
+				2A7099B017D782AE0015097C /* CMRPopupViewController.xib */,
 				2A70997817D76BA10015097C /* Supporting Files */,
 			);
 			path = Proxyfier;
@@ -151,6 +213,39 @@
 				2A70999717D76BA30015097C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A7099A517D76C320015097C /* AXStatusItemPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2A7099A617D76C320015097C /* AXStatusItemPopup.h */,
+				2A7099A717D76C320015097C /* AXStatusItemPopup.m */,
+			);
+			path = AXStatusItemPopup;
+			sourceTree = "<group>";
+		};
+		2A7099CB17D788510015097C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A709A3F17DB48830015097C /* no_proxies_back.png */,
+				2A7099DA17D789CD0015097C /* grad_rect.png */,
+				2A7099DB17D789CD0015097C /* green_status.png */,
+				2A7099DC17D789CD0015097C /* red_status.png */,
+				2A7099B317D783A80015097C /* cloud.png */,
+				2A7099B417D783A80015097C /* cloud@2x.png */,
+				2A7099B517D783A80015097C /* cloudgrey.png */,
+				2A7099B617D783A80015097C /* cloudgrey@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A709A2D17D9E1070015097C /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				2A709A2E17D9E1070015097C /* XMLDictionary.h */,
+				2A709A2F17D9E1070015097C /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +322,16 @@
 			files = (
 				2A70997C17D76BA10015097C /* InfoPlist.strings in Resources */,
 				2A70998217D76BA10015097C /* Credits.rtf in Resources */,
-				2A70998817D76BA20015097C /* MainMenu.xib in Resources */,
+				2A7099B217D782AE0015097C /* CMRPopupViewController.xib in Resources */,
+				2A7099B717D783A80015097C /* cloud.png in Resources */,
+				2A7099B817D783A80015097C /* cloud@2x.png in Resources */,
+				2A7099B917D783A80015097C /* cloudgrey.png in Resources */,
+				2A7099BA17D783A80015097C /* cloudgrey@2x.png in Resources */,
+				2A7099DD17D789CD0015097C /* grad_rect.png in Resources */,
+				2A7099DE17D789CD0015097C /* green_status.png in Resources */,
+				2A7099DF17D789CD0015097C /* red_status.png in Resources */,
+				2A709A3B17DB330B0015097C /* MainMenu.xib in Resources */,
+				2A709A4017DB48830015097C /* no_proxies_back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +366,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7099E817D792140015097C /* EPProxyModifiy.h in Sources */,
 				2A70997E17D76BA10015097C /* main.m in Sources */,
 				2A70998517D76BA20015097C /* CMRAppDelegate.m in Sources */,
+				2A7099A817D76C320015097C /* AXStatusItemPopup.m in Sources */,
+				2A7099B117D782AE0015097C /* CMRPopupViewController.m in Sources */,
+				2A7099E617D7913B0015097C /* EPProxyModifiy.m in Sources */,
+				2A7099F917D799970015097C /* ProxyListFetcher.m in Sources */,
+				2A7099FD17D79A420015097C /* Proxy.m in Sources */,
+				2A709A3017D9E1070015097C /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +383,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A70999C17D76BA30015097C /* ProxyfierTests.m in Sources */,
+				2A7099E717D7913B0015097C /* EPProxyModifiy.m in Sources */,
+				2A7099FA17D799970015097C /* ProxyListFetcher.m in Sources */,
+				2A7099FE17D79A420015097C /* Proxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +414,6 @@
 				2A70998117D76BA10015097C /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		2A70998617D76BA20015097C /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A70998717D76BA20015097C /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		2A70999717D76BA30015097C /* InfoPlist.strings */ = {
@@ -453,6 +559,7 @@
 				2A7099A117D76BA30015097C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A7099A217D76BA30015097C /* Build configuration list for PBXNativeTarget "ProxyfierTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +568,7 @@
 				2A7099A417D76BA30015097C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
