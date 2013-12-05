@@ -4,6 +4,6 @@ Proxyfier
 A lightweight proxy service for Mac OSX. 
 
 
-<img src="prev.png"></img>
+<img src="screen-124d.tiff"></img>
 
 
