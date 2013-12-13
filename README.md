@@ -5,8 +5,6 @@ A lightweight proxy service for Mac OSX.
 
 <img src="prev.png"></img>
 
-
-<h3>License</h3>
 # DON'T BE A DICK PUBLIC LICENSE
 
 > Version 1, December 2009
