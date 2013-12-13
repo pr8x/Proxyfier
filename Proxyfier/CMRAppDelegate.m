@@ -9,6 +9,7 @@
 #import "CMRAppDelegate.h"
 #import "AXStatusItemPopup.h"
 #import "EPProxyModifiy.h"
+#import "INAppStoreWindow.h"
 
 
 
@@ -16,33 +17,38 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+
     
-    
-    // init content view controller
-    // its contents will be shown inside the popover
-    CMRPopupViewController *contentViewController = [[CMRPopupViewController alloc] initWithNibName:@"CMRPopupViewController" bundle:nil];
-    
-    PVC = contentViewController;
-    
-    // create icon images shown in statusbar
-    NSImage *image = [NSImage imageNamed:@"cloud"];
-    NSImage *alternateImage = [NSImage imageNamed:@"cloudgrey"];
-    
-    AXStatusItemPopup *statusItemPopup = [[AXStatusItemPopup alloc] initWithViewController:contentViewController image:image alternateImage:alternateImage];
-    
-    
-    PM = [[EPProxyModifiy alloc] init];
-    
+    PM = [EPProxyModifiy new];
     PLF = [ProxyListFetcher new];
-    //[self RefreshProxies:nil];
-    
-    
+
+
     NSLog(@"%@",@"Start App. ()");
-    
     [self RefreshProxies:nil];
-    self.ListRefreshView.delegate = self;
+
+    INAppStoreWindow *aWindow = (INAppStoreWindow*)[self window];
+    aWindow.titleBarHeight = 65.0;
+    aWindow.showsBaselineSeparator = NO;
+    [aWindow setTitleBarDrawingBlock:^(BOOL drawsAsMainWindow, CGRect drawingRect, CGPathRef clippingPath){
+        CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
+        CGContextAddPath(context, clippingPath);
+        CGContextClip(context);
+        
+        NSColor*c = [NSColor colorWithPatternImage:[NSImage imageNamed:@"mac_title_bar"]];
+        [c set];
+        NSRectFill(drawingRect);
+    }];
     
+    
+    
+    [self.ProxyList setDoubleAction:@selector(ToggleProxy:)];
+
+    self.window.delegate = self;
+    
+}
+
+-(void)awakeFromNib {
+        [self StartReachability];
 }
 
 - (void)ptrScrollViewDidTriggerRefresh:(id)sender {
@@ -51,7 +57,7 @@
 
 - (IBAction)ToggleProxy:(id)sender {
     
-    Proxy*p =  [PLF.Proxies objectAtIndex:self.ProxyList.selectedRow];
+    Proxy*p = [PLF.Proxies objectAtIndex:self.ProxyList.selectedRow];
     if (p==nil)
         return;
     
@@ -59,32 +65,64 @@
         [PM changeProxySettingsWithAddress:p.host Port:p.port isON:NO];
         proxyEnabled = NO;
         
-        [_ProxyList setEnabled:YES];
         [self.ActivateButton setTitle:@"Activate"];
-        [self.window setTitle:@"Proxyfier (Ready)"];
+        [self.status setTitleWithMnemonic:@"localhost"];
+        self.light.image = [NSImage imageNamed:@"red_status"];
 
     }else{
         [PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES];
-        [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
         
         proxyEnabled = YES;
         [self.ActivateButton setTitle:@"Deactivate"];
+        [self.status setTitleWithMnemonic:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
+        self.light.image = [NSImage imageNamed:@"green_status"];
     }
     
-    [PVC SetStatus_:self.window.title];
+ 
+}
+
+-(void)StartReachability{
+    self.nreach = [GCNetworkReachability reachabilityForInternetConnection];
+    [self.nreach startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
+        
+        if ([self.nreach isReachable]) {
+            self.reachability.image = [NSImage imageNamed:@"121 Cloud"];
+            
+            switch (status) {
+                case GCNetworkReachabilityStatusWWAN:
+                    
+                    [self.reachability setToolTip:@"WWAN Connection."];
+                    
+                    break;
+                case GCNetworkReachabilityStatusWiFi:
+                    [self.reachability setToolTip:@"WLAN Connection."];
+                    break;
+                    
+                default:
+                    [self.reachability setToolTip:@"Error determining current network status."];
+                    break;
+            }
+            
+            
+        }else{
+            self.reachability.image = [NSImage imageNamed:@"126 CloudError"];
+            [self.reachability setToolTip:@"No Connection."];
+        }
+
+    }];
+    
     
 }
 
+
 - (IBAction)RefreshProxies:(id)sender {
-  
-    [self.spin startAnimation:nil];
+
     [PLF Fetch];
     
     _ProxyList.dataSource = PLF;
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [_ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
     
-    [self.spin stopAnimation:nil];
 }
 
 

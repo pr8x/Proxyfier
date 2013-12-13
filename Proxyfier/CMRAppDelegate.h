@@ -8,27 +8,29 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ProxyListFetcher.h"
-#import "CMRPopupViewController.h"
+
 #import "ProxyListFetcher.h"
 #import "EPProxyModifiy.h"
-#import "PullToRefreshScrollView.h"
-#import "PullToRefreshDelegate.h"
+#import "GCNetworkReachability.h"
 
-@interface CMRAppDelegate : NSObject <NSApplicationDelegate,PullToRefreshDelegate> {
+@interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate> {
  
     BOOL proxyEnabled;
     EPProxyModifiy*PM;
     ProxyListFetcher*PLF;
-    
-    CMRPopupViewController*PVC;
+
 }
 @property (unsafe_unretained) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSTableView *ProxyList;
+@property (weak) IBOutlet NSButton *reachability;
 
 - (IBAction)RefreshProxies:(id)sender;
 - (IBAction)ToggleProxy:(id)sender;
 @property (weak) IBOutlet NSButton *ActivateButton;
-@property (weak) IBOutlet PullToRefreshScrollView *ListRefreshView;
-@property (weak) IBOutlet NSProgressIndicator *spin;
+
+@property   (strong) GCNetworkReachability*nreach;
+
+@property (weak) IBOutlet NSTextField *status;
+@property (weak) IBOutlet NSButton *light;
 
 @end
