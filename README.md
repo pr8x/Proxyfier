@@ -1,7 +1,8 @@
-<img src="Proxyfier/logo-proxyfier.png"></img>
+<img src="Proxyfier/logo-proxyfier.png"></img> v1.5
 =========
 
 A lightweight proxy service for Mac OSX. 
+> Proxies provided by http://www.xroxy.com/proxyrss.xml
 
 <img src="prev.png"></img>
 
