@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/CodeMound/Proxyfier/master/Proxyfier/logo-proxyfier.png"></img> ***v1.5***
+<img src="https://raw.github.com/CodeMound/Proxyfier/master/Proxyfier/logo-proxyfier.png"></img>
 =========
 
 A lightweight proxy service for Mac OSX. 
