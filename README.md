@@ -1,10 +1,10 @@
-<img src="Proxyfier/logo-proxyfier.png"></img> v1.5
+<img src="https://raw.github.com/CodeMound/Proxyfier/master/Proxyfier/logo-proxyfier.png"></img> ***v1.5***
 =========
 
 A lightweight proxy service for Mac OSX. 
 > Proxies provided by http://www.xroxy.com/proxyrss.xml
 
-<img src="prev.png"></img>
+<img src="https://raw.github.com/CodeMound/Proxyfier/master/prev.png"></img>
 
 # DON'T BE A DICK PUBLIC LICENSE
 
