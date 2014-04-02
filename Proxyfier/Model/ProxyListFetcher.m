@@ -10,9 +10,7 @@
 #import "XMLDictionary.h"
 
 
-
-NSString* rss = @"http://www.xroxy.com/proxyrss.xml";
-
+NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
 
 @implementation ProxyListFetcher
 

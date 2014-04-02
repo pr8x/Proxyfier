@@ -34,9 +34,31 @@
         CGContextAddPath(context, clippingPath);
         CGContextClip(context);
         
-        NSColor*c = [NSColor colorWithPatternImage:[NSImage imageNamed:@"mac_title_bar"]];
-        [c set];
+        [[NSColor whiteColor] set];
         NSRectFill(drawingRect);
+        
+        
+        NSMutableParagraphStyle * aParagraphStyle = [[NSMutableParagraphStyle alloc] init];
+        [aParagraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+        [aParagraphStyle setAlignment:NSCenterTextAlignment];
+        [aParagraphStyle setMinimumLineHeight:30];
+    
+        
+        NSMutableDictionary *attrs = [NSMutableDictionary new];
+        [attrs setObject:aParagraphStyle forKey:NSParagraphStyleAttributeName];
+        [attrs setObject:[NSFont fontWithName:@"Lato-Regular" size:14.0f] forKey:NSFontAttributeName];
+        
+        [self.window.title drawInRect:drawingRect withAttributes:attrs];
+        
+        
+        CGRect description = CGRectOffset(drawingRect, 0.0f, -13.0f);
+        NSMutableDictionary*attrs2 = [NSMutableDictionary dictionaryWithDictionary:attrs];
+        [attrs2 setObject:[NSFont fontWithName:@"Lato-Regular" size:9.0f] forKey:NSFontAttributeName];
+        [attrs2 setObject:[NSColor grayColor] forKey:NSForegroundColorAttributeName];
+    
+        // ?!: [[NSColor grayColor] set];
+        [@"provided by http://www.xroxy.com/proxyrss.xml" drawInRect:description withAttributes:attrs2];
+        
     }];
     
     
@@ -45,10 +67,6 @@
 
     self.window.delegate = self;
     
-}
-
--(void)awakeFromNib {
-        [self StartReachability];
 }
 
 - (void)ptrScrollViewDidTriggerRefresh:(id)sender {
@@ -66,53 +84,22 @@
         proxyEnabled = NO;
         
         [self.ActivateButton setTitle:@"Activate"];
-        [self.status setTitleWithMnemonic:@"localhost"];
-        self.light.image = [NSImage imageNamed:@"red_status"];
+        [self.window setTitle:@"localhost"];
+        
 
     }else{
         [PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES];
         
         proxyEnabled = YES;
         [self.ActivateButton setTitle:@"Deactivate"];
-        [self.status setTitleWithMnemonic:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
-        self.light.image = [NSImage imageNamed:@"green_status"];
+        [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
+
     }
     
  
 }
 
--(void)StartReachability{
-    self.nreach = [GCNetworkReachability reachabilityForInternetConnection];
-    [self.nreach startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
-        
-        if ([self.nreach isReachable]) {
-            self.reachability.image = [NSImage imageNamed:@"121 Cloud"];
-            
-            switch (status) {
-                case GCNetworkReachabilityStatusWWAN:
-                    
-                    [self.reachability setToolTip:@"WWAN Connection."];
-                    
-                    break;
-                case GCNetworkReachabilityStatusWiFi:
-                    [self.reachability setToolTip:@"WLAN Connection."];
-                    break;
-                    
-                default:
-                    [self.reachability setToolTip:@"Error determining current network status."];
-                    break;
-            }
-            
-            
-        }else{
-            self.reachability.image = [NSImage imageNamed:@"126 CloudError"];
-            [self.reachability setToolTip:@"No Connection."];
-        }
 
-    }];
-    
-    
-}
 
 
 - (IBAction)RefreshProxies:(id)sender {

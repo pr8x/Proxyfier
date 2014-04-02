@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -652,9 +652,6 @@
                 <outlet property="ActivateButton" destination="757" id="764"/>
                 <outlet property="ListRefreshView" destination="737" id="772"/>
                 <outlet property="ProxyList" destination="738" id="762"/>
-                <outlet property="light" destination="W8Q-1u-xIv" id="wf4-0R-9l8"/>
-                <outlet property="reachability" destination="5CG-oV-iHU" id="sQr-2W-U0M"/>
-                <outlet property="status" destination="ajz-eQ-UQ9" id="kv8-Pc-LwS"/>
                 <outlet property="window" destination="735" id="761"/>
             </connections>
         </customObject>
@@ -664,6 +661,7 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="132" width="480" height="270"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <value key="minSize" type="size" width="480" height="270"/>
             <view key="contentView" id="736">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -672,17 +670,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Ee3-Wq-60V">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <rect key="frame" x="0.0" y="17" width="480" height="253"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" autosaveName="joko" rowHeight="35" id="738">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <tableView focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="joko" rowHeight="35" headerView="fx6-mp-H0k" id="738">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="253"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="9" height="15"/>
                                     <color key="backgroundColor" red="0.2196078431372549" green="0.45882352941176469" blue="0.84313725490196079" alpha="0.0" colorSpace="deviceRGB"/>
-                                    <color key="gridColor" red="0.92941182850000004" green="0.92941182850000004" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="gridColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <tableColumns>
-                                        <tableColumn identifier="country" editable="NO" width="51" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
+                                        <tableColumn identifier="country" editable="NO" width="55" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Country">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -695,7 +693,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="host" editable="NO" width="86.70703125" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
+                                        <tableColumn identifier="host" editable="NO" width="33" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Host">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -708,7 +706,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="port" editable="NO" width="75.73828125" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
+                                        <tableColumn identifier="port" editable="NO" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Port">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -721,7 +719,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="type" editable="NO" width="102.828125" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
+                                        <tableColumn identifier="type" editable="NO" width="34" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Type">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -734,19 +732,19 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="reliability" editable="NO" width="118" minWidth="10" maxWidth="3.4028234663852886e+38" id="744">
+                                        <tableColumn identifier="reliability" width="60" minWidth="10" maxWidth="3.4028234663852886e+38" id="kBF-Nj-giW">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Reliability">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <levelIndicatorCell key="dataCell" state="on" alignment="left" doubleValue="3" maxValue="10000" warningValue="3" criticalValue="3" levelIndicatorStyle="relevancy" id="747"/>
+                                            <sliderCell key="dataCell" enabled="NO" state="on" alignment="left" maxValue="10000" doubleValue="5000" tickMarkPosition="above" numberOfTickMarks="5" sliderType="linear" id="rxp-q1-sMK"/>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                     </tableColumns>
                                 </tableView>
                             </subviews>
-                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="739">
                             <rect key="frame" x="0.0" y="254" width="480" height="16"/>
@@ -756,6 +754,10 @@
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
+                        <tableHeaderView key="headerView" id="fx6-mp-H0k">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
                     </scrollView>
                 </subviews>
             </view>
@@ -766,34 +768,7 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="756"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="752"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="755"/>
-                    <toolbarItem implicitItemIdentifier="D60D32BD-BC96-4189-B445-B224083653A9" label="" paletteLabel="" image="red_status" id="pDa-eV-X8A">
-                        <nil key="toolTip"/>
-                        <size key="minSize" width="0.0" height="21"/>
-                        <size key="maxSize" width="25" height="48"/>
-                        <button key="view" id="W8Q-1u-xIv">
-                            <rect key="frame" x="0.0" y="14" width="25" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="red_status" imagePosition="overlaps" alignment="center" inset="2" id="Fn5-PP-Nk1">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
-                            </buttonCell>
-                        </button>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="1092606A-383D-4F39-9601-F38750C31A00" label="" paletteLabel="" id="4TG-6U-nmm">
-                        <nil key="toolTip"/>
-                        <size key="minSize" width="0.0" height="17"/>
-                        <size key="maxSize" width="116" height="26"/>
-                        <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="ajz-eQ-UQ9">
-                            <rect key="frame" x="0.0" y="14" width="116" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="localhost" usesSingleLineMode="YES" id="fa1-GQ-23v">
-                                <font key="font" size="14" name="VarelaRound-Regular"/>
-                                <color key="textColor" red="0.4309430803571429" green="0.4309430803571429" blue="0.4309430803571429" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                            </textFieldCell>
-                        </textField>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="E8796AF0-355D-4F10-8DAF-875BF802819A" label="Custom View" paletteLabel="Custom View" id="759">
+                    <toolbarItem implicitItemIdentifier="E8796AF0-355D-4F10-8DAF-875BF802819A" label="Activate" paletteLabel="Activate" id="759">
                         <nil key="toolTip"/>
                         <size key="minSize" width="116" height="25"/>
                         <size key="maxSize" width="116" height="25"/>
@@ -809,33 +784,19 @@
                             </connections>
                         </button>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="302C0440-2CAE-402B-A906-565898F2A0CE" label="Connected to Internet" paletteLabel="" toolTip="Connected to Internet." image="121 Cloud" id="5hn-0Q-IuI">
-                        <size key="minSize" width="15" height="21"/>
-                        <size key="maxSize" width="32" height="23"/>
-                        <button key="view" id="5CG-oV-iHU">
-                            <rect key="frame" x="0.0" y="14" width="32" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="121 Cloud" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="F2Z-hd-sKz">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
-                            </buttonCell>
-                        </button>
+                    <toolbarItem implicitItemIdentifier="1EFA6836-EFEF-4F69-8939-5FCA7556925F" label="NSMobileMe" paletteLabel="NSMobileMe" tag="-1" image="NSMobileMe" selectable="YES" id="mAr-2L-Hju">
+                        <nil key="toolTip"/>
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="752"/>
-                    <toolbarItem reference="752"/>
                     <toolbarItem reference="755"/>
-                    <toolbarItem reference="4TG-6U-nmm"/>
-                    <toolbarItem reference="pDa-eV-X8A"/>
                     <toolbarItem reference="759"/>
-                    <toolbarItem reference="5hn-0Q-IuI"/>
+                    <toolbarItem reference="mAr-2L-Hju"/>
                 </defaultToolbarItems>
             </toolbar>
         </window>
     </objects>
     <resources>
-        <image name="121 Cloud" width="16" height="16"/>
-        <image name="red_status" width="12" height="12"/>
+        <image name="NSMobileMe" width="32" height="32"/>
     </resources>
 </document>

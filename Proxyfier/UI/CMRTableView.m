@@ -11,7 +11,9 @@
 @implementation CMRTableView
 
 
-- (void)highlightSelectionInClipRect:(NSRect)theClipRect
+
+
+/*- (void)highlightSelectionInClipRect:(NSRect)theClipRect
 {
     
     // this method is asking us to draw the hightlights for
@@ -63,5 +65,6 @@
         }
     }
 }
+ */
 
 @end

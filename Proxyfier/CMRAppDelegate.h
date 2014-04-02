@@ -28,9 +28,7 @@
 - (IBAction)ToggleProxy:(id)sender;
 @property (weak) IBOutlet NSButton *ActivateButton;
 
-@property   (strong) GCNetworkReachability*nreach;
 
-@property (weak) IBOutlet NSTextField *status;
-@property (weak) IBOutlet NSButton *light;
+
 
 @end

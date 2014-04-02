@@ -43,14 +43,21 @@
     return YES;
 }
 
+
+
 - (void)changeProxySettingsWithAddress: (NSString *)address
                                  Port :(NSString *)port
                                   isON: (BOOL)isOn{
+    
+    SCPreferencesRef prefRef = SCPreferencesCreateWithAuthorization(nil, CFSTR("Proxy"), nil, _authRef);
+    
+    
     if (_authRef == NULL) {
-
+        
         [self getAuthorization];
     }
-    SCPreferencesRef prefRef = SCPreferencesCreateWithAuthorization(nil, CFSTR("Proxy"), nil, _authRef);
+    
+    
     NSDictionary *sets = (__bridge NSDictionary *)SCPreferencesGetValue(prefRef, kSCPrefNetworkServices);
     NSMutableDictionary *proxySettings = [[NSMutableDictionary alloc] init];
     
@@ -65,6 +72,7 @@
         }
     }
     
+
     NSNumber *enable;
     
     if (isOn) {
