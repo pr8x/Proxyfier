@@ -1,10 +1,10 @@
-<img src="https://raw.github.com/CodeMound/Proxyfier/master/Proxyfier/logo-proxyfier.png"></img>
+PROXYFIER UI
 =========
 
-A lightweight proxy service for Mac OSX. 
+A lightweight (UI) proxy service for Mac OSX. 
 > Proxies provided by http://www.xroxy.com/proxyrss.xml
 
-<img src="https://raw.github.com/CodeMound/Proxyfier/master/prev.png"></img>
+<img src="https://raw.githubusercontent.com/CodeMound/Proxyfier/master/Demo/Bildschirmfoto%202014-04-02%20um%2014.31.30.JPG"></img>
 
 # DON'T BE A DICK PUBLIC LICENSE
 
