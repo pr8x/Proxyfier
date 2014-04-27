@@ -14,11 +14,10 @@
     NSMutableParagraphStyle * aParagraphStyle = [[NSMutableParagraphStyle alloc] init];
     [aParagraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
     [aParagraphStyle setAlignment:NSCenterTextAlignment];
-    NSMutableDictionary *attrs = [[NSMutableDictionary dictionaryWithDictionary:
-                                   [[self attributedStringValue]
-                                    attributesAtIndex:0
-                                    effectiveRange:NULL]]
-                                  mutableCopy];
+    
+   
+    
+    NSMutableDictionary *attrs = [NSMutableDictionary new];
     [attrs setObject:aParagraphStyle forKey:NSParagraphStyleAttributeName];
     
    

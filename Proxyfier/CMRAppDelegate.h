@@ -18,6 +18,7 @@
     BOOL proxyEnabled;
     EPProxyModifiy*PM;
     ProxyListFetcher*PLF;
+    Proxy* currentProxy;
 
 }
 @property (unsafe_unretained) IBOutlet NSWindow *window;

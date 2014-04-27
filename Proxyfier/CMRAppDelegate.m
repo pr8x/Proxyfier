@@ -57,7 +57,7 @@
         [attrs2 setObject:[NSColor grayColor] forKey:NSForegroundColorAttributeName];
     
         // ?!: [[NSColor grayColor] set];
-        [@"provided by http://www.xroxy.com/proxyrss.xml" drawInRect:description withAttributes:attrs2];
+        [@"http://www.xroxy.com/proxyrss.xml" drawInRect:description withAttributes:attrs2];
         
     }];
     
@@ -86,6 +86,8 @@
         [self.ActivateButton setTitle:@"Activate"];
         [self.window setTitle:@"localhost"];
         
+        currentProxy = p;
+        
 
     }else{
         [PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES];
@@ -94,12 +96,13 @@
         [self.ActivateButton setTitle:@"Deactivate"];
         [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
 
+        currentProxy = nil;
     }
+    
+    
     
  
 }
-
-
 
 
 - (IBAction)RefreshProxies:(id)sender {
@@ -110,6 +113,12 @@
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [_ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
     
+}
+
+
+-(void)windowWillClose:(NSNotification *)notification {
+    if (currentProxy)
+        [PM changeProxySettingsWithAddress:currentProxy.host Port:currentProxy.port isON:NO];
 }
 
 

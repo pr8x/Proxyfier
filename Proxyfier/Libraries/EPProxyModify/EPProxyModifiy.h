@@ -13,5 +13,5 @@
 - (void)changeProxySettingsWithAddress: (NSString *)address
                                  Port :(NSString *)port
                                   isON: (BOOL)isOn;
--(NSMutableDictionary*)GetProxySettings;
+
 @end

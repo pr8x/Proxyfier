@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -662,6 +662,7 @@
             <rect key="contentRect" x="109" y="132" width="577" height="281"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="600" height="270"/>
+            <value key="maxSize" type="size" width="600" height="270"/>
             <view key="contentView" id="736">
                 <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -680,7 +681,7 @@
                                     <color key="backgroundColor" red="0.2196078431372549" green="0.45882352941176469" blue="0.84313725490196079" alpha="0.0" colorSpace="deviceRGB"/>
                                     <color key="gridColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <tableColumns>
-                                        <tableColumn identifier="country" editable="NO" width="55" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
+                                        <tableColumn identifier="country" editable="NO" width="76.75390625" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Country">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -693,7 +694,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="host" editable="NO" width="33" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
+                                        <tableColumn identifier="host" editable="NO" width="106.33984375" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Host">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -706,7 +707,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="port" editable="NO" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
+                                        <tableColumn identifier="port" editable="NO" width="95.73046875" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Port">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -719,7 +720,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="type" editable="NO" width="34" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
+                                        <tableColumn identifier="type" editable="NO" width="121.41015625" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Type">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -732,7 +733,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="reliability" width="60" minWidth="10" maxWidth="3.4028234663852886e+38" id="kBF-Nj-giW">
+                                        <tableColumn identifier="reliability" width="89.3671875" minWidth="10" maxWidth="3.4028234663852886e+38" id="kBF-Nj-giW">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Reliability">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -784,19 +785,12 @@
                             </connections>
                         </button>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="1EFA6836-EFEF-4F69-8939-5FCA7556925F" label="NSMobileMe" paletteLabel="NSMobileMe" tag="-1" image="NSMobileMe" selectable="YES" id="mAr-2L-Hju">
-                        <nil key="toolTip"/>
-                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="755"/>
                     <toolbarItem reference="759"/>
-                    <toolbarItem reference="mAr-2L-Hju"/>
                 </defaultToolbarItems>
             </toolbar>
         </window>
     </objects>
-    <resources>
-        <image name="NSMobileMe" width="32" height="32"/>
-    </resources>
 </document>
