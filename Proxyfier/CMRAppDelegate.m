@@ -7,24 +7,20 @@
 //
 
 #import "CMRAppDelegate.h"
-#import "AXStatusItemPopup.h"
 #import "EPProxyModifiy.h"
 #import "INAppStoreWindow.h"
-
-
 
 @implementation CMRAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    
     PM = [EPProxyModifiy new];
     PLF = [ProxyListFetcher new];
 
 
     NSLog(@"%@",@"Start App. ()");
-    [self RefreshProxies:nil];
+    [self RefreshProxies];
 
     INAppStoreWindow *aWindow = (INAppStoreWindow*)[self window];
     aWindow.titleBarHeight = 65.0;
@@ -62,15 +58,9 @@
     }];
     
     
-    
     [self.ProxyList setDoubleAction:@selector(ToggleProxy:)];
-
     self.window.delegate = self;
     
-}
-
-- (void)ptrScrollViewDidTriggerRefresh:(id)sender {
-    [self RefreshProxies:nil];
 }
 
 - (IBAction)ToggleProxy:(id)sender {
@@ -98,14 +88,11 @@
 
         currentProxy = nil;
     }
-    
-    
-    
  
 }
 
-
-- (IBAction)RefreshProxies:(id)sender {
+#pragma mark - Refresh
+- (void)RefreshProxies {
 
     [PLF Fetch];
     
@@ -115,7 +102,7 @@
     
 }
 
-
+#pragma mark - @NSWindowDelegate
 -(void)windowWillClose:(NSNotification *)notification {
     if (currentProxy)
         [PM changeProxySettingsWithAddress:currentProxy.host Port:currentProxy.port isON:NO];

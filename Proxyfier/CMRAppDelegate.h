@@ -21,15 +21,15 @@
     Proxy* currentProxy;
 
 }
+
+#pragma mark - @UI: Outlets
 @property (unsafe_unretained) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSTableView *ProxyList;
-@property (weak) IBOutlet NSButton *reachability;
-
-- (IBAction)RefreshProxies:(id)sender;
-- (IBAction)ToggleProxy:(id)sender;
 @property (weak) IBOutlet NSButton *ActivateButton;
 
 
+- (void)RefreshProxies;
+- (IBAction)ToggleProxy:(id)sender;
 
 
 @end

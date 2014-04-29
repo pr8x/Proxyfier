@@ -17,7 +17,7 @@
 
 @property (nonatomic,strong) NSMutableArray*Proxies;
 
-
+/* Starts fetching proxies */
 -(void)Fetch;
 
 @end

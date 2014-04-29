@@ -8,20 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2A192B6A18EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4218EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m */; };
-		2A192B6B18EC386000A6A56E /* AXStatusItemPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4618EC386000A6A56E /* AXStatusItemPopup.m */; };
-		2A192B6C18EC386000A6A56E /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4818EC386000A6A56E /* NSWindow+canBecomeKeyWindow.m */; };
 		2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */; };
 		2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4E18EC386000A6A56E /* GCNetworkReachability.m */; };
 		2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5118EC386000A6A56E /* INAppStoreWindow.m */; };
 		2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5318EC386000A6A56E /* INWindowButton.m */; };
-		2A192B7118EC386000A6A56E /* pull-to-refresh-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A192B5718EC386000A6A56E /* pull-to-refresh-arrow.png */; };
-		2A192B7218EC386000A6A56E /* PullToRefreshClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5918EC386000A6A56E /* PullToRefreshClipView.m */; };
-		2A192B7318EC386000A6A56E /* PullToRefreshScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5C18EC386000A6A56E /* PullToRefreshScrollView.m */; };
-		2A192B7418EC386000A6A56E /* release-to-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A192B5D18EC386000A6A56E /* release-to-refresh.png */; };
 		2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6018EC386000A6A56E /* XMLDictionary.m */; };
 		2A192B7618EC386000A6A56E /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6318EC386000A6A56E /* Proxy.m */; };
 		2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6518EC386000A6A56E /* ProxyListFetcher.m */; };
-		2A192B7818EC386000A6A56E /* CMRTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6818EC386000A6A56E /* CMRTableView.m */; };
 		2A192B7918EC386000A6A56E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A192B6918EC386000A6A56E /* MainMenu.xib */; };
 		2A70997217D76BA10015097C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997117D76BA10015097C /* Cocoa.framework */; };
 		2A70997C17D76BA10015097C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A70997A17D76BA10015097C /* InfoPlist.strings */; };
@@ -35,6 +28,7 @@
 		2A7099D017D789040015097C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099CF17D789030015097C /* SystemConfiguration.framework */; };
 		2A7099E317D790250015097C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997617D76BA10015097C /* Foundation.framework */; };
 		2A7099EA17D792A50015097C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099E917D792A50015097C /* Security.framework */; };
+		2AB0E9B1190D4BE40030C0CB /* PProxyModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */; };
 		2ACB845918E1F03900D270DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB845818E1F03900D270DB /* Images.xcassets */; };
 		2AD757B31802E54700D404B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD757B21802E54700D404B2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -52,10 +46,6 @@
 /* Begin PBXFileReference section */
 		2A192B4118EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableHeaderCell+CMDTableHeaderCustom.h"; sourceTree = "<group>"; };
 		2A192B4218EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableHeaderCell+CMDTableHeaderCustom.m"; sourceTree = "<group>"; };
-		2A192B4518EC386000A6A56E /* AXStatusItemPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXStatusItemPopup.h; sourceTree = "<group>"; };
-		2A192B4618EC386000A6A56E /* AXStatusItemPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXStatusItemPopup.m; sourceTree = "<group>"; };
-		2A192B4718EC386000A6A56E /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
-		2A192B4818EC386000A6A56E /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 		2A192B4A18EC386000A6A56E /* EPProxyModifiy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPProxyModifiy.h; sourceTree = "<group>"; };
 		2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPProxyModifiy.m; sourceTree = "<group>"; };
 		2A192B4D18EC386000A6A56E /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
@@ -64,22 +54,13 @@
 		2A192B5118EC386000A6A56E /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
 		2A192B5218EC386000A6A56E /* INWindowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INWindowButton.h; sourceTree = "<group>"; };
 		2A192B5318EC386000A6A56E /* INWindowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INWindowButton.m; sourceTree = "<group>"; };
-		2A192B5718EC386000A6A56E /* pull-to-refresh-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pull-to-refresh-arrow.png"; sourceTree = "<group>"; };
-		2A192B5818EC386000A6A56E /* PullToRefreshClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshClipView.h; sourceTree = "<group>"; };
-		2A192B5918EC386000A6A56E /* PullToRefreshClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshClipView.m; sourceTree = "<group>"; };
-		2A192B5B18EC386000A6A56E /* PullToRefreshScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshScrollView.h; sourceTree = "<group>"; };
-		2A192B5C18EC386000A6A56E /* PullToRefreshScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshScrollView.m; sourceTree = "<group>"; };
-		2A192B5D18EC386000A6A56E /* release-to-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "release-to-refresh.png"; sourceTree = "<group>"; };
 		2A192B5F18EC386000A6A56E /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		2A192B6018EC386000A6A56E /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		2A192B6218EC386000A6A56E /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
 		2A192B6318EC386000A6A56E /* Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
 		2A192B6418EC386000A6A56E /* ProxyListFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyListFetcher.h; sourceTree = "<group>"; };
 		2A192B6518EC386000A6A56E /* ProxyListFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyListFetcher.m; sourceTree = "<group>"; };
-		2A192B6718EC386000A6A56E /* CMRTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRTableView.h; sourceTree = "<group>"; };
-		2A192B6818EC386000A6A56E /* CMRTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRTableView.m; sourceTree = "<group>"; };
 		2A192B6918EC386000A6A56E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		2A192B7A18EC392D00A6A56E /* PullToRefreshDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshDelegate.h; sourceTree = "<group>"; };
 		2A70996E17D76BA10015097C /* Proxyfier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxyfier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70997117D76BA10015097C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2A70997417D76BA10015097C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +81,8 @@
 		2A70999B17D76BA30015097C /* ProxyfierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyfierTests.m; sourceTree = "<group>"; };
 		2A7099CF17D789030015097C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2A7099E917D792A50015097C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2AB0E9AF190D4BE40030C0CB /* PProxyModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PProxyModifier.h; sourceTree = "<group>"; };
+		2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PProxyModifier.m; sourceTree = "<group>"; };
 		2ACB845818E1F03900D270DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AD757B21802E54700D404B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -141,26 +124,13 @@
 		2A192B4318EC386000A6A56E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				2A192B4418EC386000A6A56E /* AXStatusItemPopup */,
 				2A192B4918EC386000A6A56E /* EPProxyModify */,
 				2A192B4C18EC386000A6A56E /* GCNetworkReachability */,
 				2A192B4F18EC386000A6A56E /* INAppStoreWindow */,
 				2A192B5418EC386000A6A56E /* lib */,
-				2A192B5618EC386000A6A56E /* Pull to Refresh */,
 				2A192B5E18EC386000A6A56E /* XMLDictionary */,
 			);
 			path = Libraries;
-			sourceTree = "<group>";
-		};
-		2A192B4418EC386000A6A56E /* AXStatusItemPopup */ = {
-			isa = PBXGroup;
-			children = (
-				2A192B4518EC386000A6A56E /* AXStatusItemPopup.h */,
-				2A192B4618EC386000A6A56E /* AXStatusItemPopup.m */,
-				2A192B4718EC386000A6A56E /* NSWindow+canBecomeKeyWindow.h */,
-				2A192B4818EC386000A6A56E /* NSWindow+canBecomeKeyWindow.m */,
-			);
-			path = AXStatusItemPopup;
 			sourceTree = "<group>";
 		};
 		2A192B4918EC386000A6A56E /* EPProxyModify */ = {
@@ -207,20 +177,6 @@
 			path = inject_and_interpose;
 			sourceTree = "<group>";
 		};
-		2A192B5618EC386000A6A56E /* Pull to Refresh */ = {
-			isa = PBXGroup;
-			children = (
-				2A192B7A18EC392D00A6A56E /* PullToRefreshDelegate.h */,
-				2A192B5718EC386000A6A56E /* pull-to-refresh-arrow.png */,
-				2A192B5818EC386000A6A56E /* PullToRefreshClipView.h */,
-				2A192B5918EC386000A6A56E /* PullToRefreshClipView.m */,
-				2A192B5B18EC386000A6A56E /* PullToRefreshScrollView.h */,
-				2A192B5C18EC386000A6A56E /* PullToRefreshScrollView.m */,
-				2A192B5D18EC386000A6A56E /* release-to-refresh.png */,
-			);
-			path = "Pull to Refresh";
-			sourceTree = "<group>";
-		};
 		2A192B5E18EC386000A6A56E /* XMLDictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +200,6 @@
 		2A192B6618EC386000A6A56E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2A192B6718EC386000A6A56E /* CMRTableView.h */,
-				2A192B6818EC386000A6A56E /* CMRTableView.m */,
 				2A192B6918EC386000A6A56E /* MainMenu.xib */,
 			);
 			path = UI;
@@ -302,6 +256,8 @@
 				2A192B6618EC386000A6A56E /* UI */,
 				2A70998317D76BA10015097C /* CMRAppDelegate.h */,
 				2A70998417D76BA20015097C /* CMRAppDelegate.m */,
+				2AB0E9AF190D4BE40030C0CB /* PProxyModifier.h */,
+				2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */,
 				2ACB845818E1F03900D270DB /* Images.xcassets */,
 				2A70997817D76BA10015097C /* Supporting Files */,
 			);
@@ -412,8 +368,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A70997C17D76BA10015097C /* InfoPlist.strings in Resources */,
-				2A192B7418EC386000A6A56E /* release-to-refresh.png in Resources */,
-				2A192B7118EC386000A6A56E /* pull-to-refresh-arrow.png in Resources */,
 				2A70998217D76BA10015097C /* Credits.rtf in Resources */,
 				2ACB845918E1F03900D270DB /* Images.xcassets in Resources */,
 				2A192B7918EC386000A6A56E /* MainMenu.xib in Resources */,
@@ -451,20 +405,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A192B7218EC386000A6A56E /* PullToRefreshClipView.m in Sources */,
 				2A70997E17D76BA10015097C /* main.m in Sources */,
-				2A192B6C18EC386000A6A56E /* NSWindow+canBecomeKeyWindow.m in Sources */,
 				2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */,
 				2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */,
 				2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */,
 				2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */,
-				2A192B7818EC386000A6A56E /* CMRTableView.m in Sources */,
-				2A192B7318EC386000A6A56E /* PullToRefreshScrollView.m in Sources */,
 				2A192B6A18EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m in Sources */,
 				2A192B7618EC386000A6A56E /* Proxy.m in Sources */,
 				2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */,
-				2A192B6B18EC386000A6A56E /* AXStatusItemPopup.m in Sources */,
 				2A70998517D76BA20015097C /* CMRAppDelegate.m in Sources */,
+				2AB0E9B1190D4BE40030C0CB /* PProxyModifier.m in Sources */,
 				2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

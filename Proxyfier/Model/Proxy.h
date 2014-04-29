@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Proxy : NSObject
+
 @property NSString*host;
 @property NSString*port;
 @property NSString*type;
