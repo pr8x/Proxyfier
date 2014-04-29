@@ -48,15 +48,6 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
 }
 
 
--(NSArray*)ParseArrayIntoProxyArray:(NSArray*)proxies {
-    
-    NSMutableArray*ret = [NSMutableArray new];
-    
-    return ret;
-    
-}
-
-
 #pragma mark - @UITableViewDataSource
 -(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return self.Proxies.count;
