@@ -4,7 +4,7 @@ PROXYFIER UI
 A lightweight (UI) proxy service for Mac OSX. 
 > Proxies provided by http://www.xroxy.com/proxyrss.xml
 
-<img src=""></img>
+<img src="Demo/demo.png"></img>
 
 # DON'T BE A DICK PUBLIC LICENSE
 
