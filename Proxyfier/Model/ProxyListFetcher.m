@@ -56,6 +56,10 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
     Proxy *correspondingProxy = self.Proxies[row];
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
     return [correspondingProxy 
         valueForKey: [tableColumn identifier]];
     
