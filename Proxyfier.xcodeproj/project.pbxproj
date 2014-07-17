@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A192B6A18EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4218EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m */; };
 		2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */; };
 		2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4E18EC386000A6A56E /* GCNetworkReachability.m */; };
 		2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5118EC386000A6A56E /* INAppStoreWindow.m */; };
@@ -28,7 +27,6 @@
 		2A7099D017D789040015097C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099CF17D789030015097C /* SystemConfiguration.framework */; };
 		2A7099E317D790250015097C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997617D76BA10015097C /* Foundation.framework */; };
 		2A7099EA17D792A50015097C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099E917D792A50015097C /* Security.framework */; };
-		2AB0E9B1190D4BE40030C0CB /* PProxyModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */; };
 		2ACB845918E1F03900D270DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB845818E1F03900D270DB /* Images.xcassets */; };
 		2AD757B31802E54700D404B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD757B21802E54700D404B2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A192B4118EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTableHeaderCell+CMDTableHeaderCustom.h"; sourceTree = "<group>"; };
-		2A192B4218EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTableHeaderCell+CMDTableHeaderCustom.m"; sourceTree = "<group>"; };
 		2A192B4A18EC386000A6A56E /* EPProxyModifiy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPProxyModifiy.h; sourceTree = "<group>"; };
 		2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPProxyModifiy.m; sourceTree = "<group>"; };
 		2A192B4D18EC386000A6A56E /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
@@ -81,8 +77,6 @@
 		2A70999B17D76BA30015097C /* ProxyfierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyfierTests.m; sourceTree = "<group>"; };
 		2A7099CF17D789030015097C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2A7099E917D792A50015097C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2AB0E9AF190D4BE40030C0CB /* PProxyModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PProxyModifier.h; sourceTree = "<group>"; };
-		2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PProxyModifier.m; sourceTree = "<group>"; };
 		2ACB845818E1F03900D270DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AD757B21802E54700D404B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -115,8 +109,6 @@
 		2A192B4018EC386000A6A56E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				2A192B4118EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.h */,
-				2A192B4218EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -127,7 +119,6 @@
 				2A192B4918EC386000A6A56E /* EPProxyModify */,
 				2A192B4C18EC386000A6A56E /* GCNetworkReachability */,
 				2A192B4F18EC386000A6A56E /* INAppStoreWindow */,
-				2A192B5418EC386000A6A56E /* lib */,
 				2A192B5E18EC386000A6A56E /* XMLDictionary */,
 			);
 			path = Libraries;
@@ -160,21 +151,6 @@
 				2A192B5318EC386000A6A56E /* INWindowButton.m */,
 			);
 			path = INAppStoreWindow;
-			sourceTree = "<group>";
-		};
-		2A192B5418EC386000A6A56E /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				2A192B5518EC386000A6A56E /* inject_and_interpose */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		2A192B5518EC386000A6A56E /* inject_and_interpose */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = inject_and_interpose;
 			sourceTree = "<group>";
 		};
 		2A192B5E18EC386000A6A56E /* XMLDictionary */ = {
@@ -256,8 +232,6 @@
 				2A192B6618EC386000A6A56E /* UI */,
 				2A70998317D76BA10015097C /* CMRAppDelegate.h */,
 				2A70998417D76BA20015097C /* CMRAppDelegate.m */,
-				2AB0E9AF190D4BE40030C0CB /* PProxyModifier.h */,
-				2AB0E9B0190D4BE40030C0CB /* PProxyModifier.m */,
 				2ACB845818E1F03900D270DB /* Images.xcassets */,
 				2A70997817D76BA10015097C /* Supporting Files */,
 			);
@@ -410,11 +384,9 @@
 				2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */,
 				2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */,
 				2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */,
-				2A192B6A18EC386000A6A56E /* NSTableHeaderCell+CMDTableHeaderCustom.m in Sources */,
 				2A192B7618EC386000A6A56E /* Proxy.m in Sources */,
 				2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */,
 				2A70998517D76BA20015097C /* CMRAppDelegate.m in Sources */,
-				2AB0E9B1190D4BE40030C0CB /* PProxyModifier.m in Sources */,
 				2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

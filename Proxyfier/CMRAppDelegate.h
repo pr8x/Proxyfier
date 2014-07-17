@@ -14,12 +14,10 @@
 #import "GCNetworkReachability.h"
 
 @interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate> {
- 
     BOOL proxyEnabled;
     EPProxyModifiy*PM;
     ProxyListFetcher*PLF;
     Proxy* currentProxy;
-
 }
 
 #pragma mark - @UI: Outlets
@@ -27,9 +25,7 @@
 @property (strong) IBOutlet NSTableView *ProxyList;
 @property (weak) IBOutlet NSButton *ActivateButton;
 
-
 - (void)RefreshProxies;
 - (IBAction)ToggleProxy:(id)sender;
-
 
 @end

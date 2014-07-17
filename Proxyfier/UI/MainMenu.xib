@@ -658,11 +658,10 @@
         <customObject id="420" customClass="NSFontManager"/>
         <window title="Proxyfier" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="735" customClass="INAppStoreWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="132" width="577" height="281"/>
+            <rect key="contentRect" x="305" y="212" width="577" height="281"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-            <value key="minSize" type="size" width="600" height="270"/>
-            <value key="maxSize" type="size" width="600" height="270"/>
+            <value key="minSize" type="size" width="577" height="281"/>
+            <value key="maxSize" type="size" width="577" height="281"/>
             <view key="contentView" id="736">
                 <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -671,11 +670,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Ee3-Wq-60V">
-                            <rect key="frame" x="0.0" y="17" width="577" height="264"/>
+                            <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="joko" rowHeight="35" headerView="fx6-mp-H0k" id="738">
-                                    <rect key="frame" x="0.0" y="0.0" width="577" height="264"/>
+                                <tableView focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="joko" rowHeight="35" id="738">
+                                    <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="9" height="15"/>
                                     <color key="backgroundColor" red="0.2196078431372549" green="0.45882352941176469" blue="0.84313725490196079" alpha="0.0" colorSpace="deviceRGB"/>
@@ -733,7 +732,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="reliability" width="89.3671875" minWidth="10" maxWidth="3.4028234663852886e+38" id="kBF-Nj-giW">
+                                        <tableColumn identifier="reliability" width="132.3671875" minWidth="10" maxWidth="1000" headerToolTip="Indicates average uptime of server" id="kBF-Nj-giW">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Reliability">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -755,10 +754,6 @@
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <tableHeaderView key="headerView" id="fx6-mp-H0k">
-                            <rect key="frame" x="0.0" y="0.0" width="577" height="17"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </tableHeaderView>
                     </scrollView>
                 </subviews>
             </view>
@@ -778,7 +773,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="roundTextured" title="Activate" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="758">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" size="13" name="Varela"/>
+                                <font key="font" metaFont="system"/>
                             </buttonCell>
                             <connections>
                                 <action selector="ToggleProxy:" target="494" id="763"/>

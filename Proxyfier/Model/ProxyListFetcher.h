@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Proxy.h"
 
-
-
-@interface ProxyListFetcher : NSObject <NSTableViewDataSource>{
-    NSMutableArray*Proxies;
-}
+@interface ProxyListFetcher : NSObject <NSTableViewDataSource>
 
 @property (nonatomic,strong) NSMutableArray*Proxies;
 

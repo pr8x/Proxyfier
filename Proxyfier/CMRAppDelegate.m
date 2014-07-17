@@ -18,47 +18,25 @@
     PM = [EPProxyModifiy new];
     PLF = [ProxyListFetcher new];
 
-
     NSLog(@"%@",@"Start App. ()");
-    [self RefreshProxies];
-
-    INAppStoreWindow *aWindow = (INAppStoreWindow*)[self window];
-    aWindow.titleBarHeight = 65.0;
-    aWindow.showsBaselineSeparator = NO;
-    [aWindow setTitleBarDrawingBlock:^(BOOL drawsAsMainWindow, CGRect drawingRect, CGPathRef clippingPath){
-        CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
-        CGContextAddPath(context, clippingPath);
-        CGContextClip(context);
-        
-        [[NSColor whiteColor] set];
-        NSRectFill(drawingRect);
-        
-        
-        NSMutableParagraphStyle * aParagraphStyle = [[NSMutableParagraphStyle alloc] init];
-        [aParagraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
-        [aParagraphStyle setAlignment:NSCenterTextAlignment];
-        [aParagraphStyle setMinimumLineHeight:30];
-    
-        
-        NSMutableDictionary *attrs = [NSMutableDictionary new];
-        [attrs setObject:aParagraphStyle forKey:NSParagraphStyleAttributeName];
-        [attrs setObject:[NSFont fontWithName:@"Lato-Regular" size:14.0f] forKey:NSFontAttributeName];
-        
-        [self.window.title drawInRect:drawingRect withAttributes:attrs];
-        
-        
-        CGRect description = CGRectOffset(drawingRect, 0.0f, -13.0f);
-        NSMutableDictionary*attrs2 = [NSMutableDictionary dictionaryWithDictionary:attrs];
-        [attrs2 setObject:[NSFont fontWithName:@"Lato-Regular" size:9.0f] forKey:NSFontAttributeName];
-        [attrs2 setObject:[NSColor grayColor] forKey:NSForegroundColorAttributeName];
-    
-        // ?!: [[NSColor grayColor] set];
-        [@"http://www.xroxy.com/proxyrss.xml" drawInRect:description withAttributes:attrs2];
-        
-    }];
     
     
     [self.ProxyList setDoubleAction:@selector(ToggleProxy:)];
+    self.ProxyList.dataSource = PLF;
+    
+    [self RefreshProxies];
+
+    INAppStoreWindow *aWindow = (INAppStoreWindow*)[self window];
+    aWindow.titleBarHeight = 55;
+    aWindow.showsBaselineSeparator = NO;
+    aWindow.titleBarStartColor     = [NSColor colorWithCalibratedRed:0.995 green:0.990 blue:0.990 alpha:1.000];
+    aWindow.titleBarEndColor       = [NSColor whiteColor];
+
+    
+    aWindow.inactiveTitleBarEndColor       = [NSColor colorWithCalibratedWhite: 0.95 alpha: 1.0];
+    aWindow.inactiveTitleBarStartColor     = [NSColor colorWithCalibratedWhite: 0.8  alpha: 1.0];
+    aWindow.showsTitle = YES;
+    aWindow.showsBaselineSeparator = NO;
     self.window.delegate = self;
     
 }
@@ -95,10 +73,10 @@
 - (void)RefreshProxies {
 
     [PLF Fetch];
-    
-    _ProxyList.dataSource = PLF;
+
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
-    [_ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
+    [self.ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
+    [self.ProxyList reloadData];
     
 }
 
