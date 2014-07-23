@@ -27,6 +27,12 @@
 		2A7099D017D789040015097C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099CF17D789030015097C /* SystemConfiguration.framework */; };
 		2A7099E317D790250015097C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A70997617D76BA10015097C /* Foundation.framework */; };
 		2A7099EA17D792A50015097C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7099E917D792A50015097C /* Security.framework */; };
+		2AB1D30E197F939B00AF01B3 /* GRGlassAccessoryWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D303197F939B00AF01B3 /* GRGlassAccessoryWindow.m */; };
+		2AB1D30F197F939B00AF01B3 /* GRGlassThemeWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D305197F939B00AF01B3 /* GRGlassThemeWidget.m */; };
+		2AB1D310197F939B00AF01B3 /* GRGlassWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D307197F939B00AF01B3 /* GRGlassWindow.m */; };
+		2AB1D311197F939B00AF01B3 /* NSWindow+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D309197F939B00AF01B3 /* NSWindow+Screenshot.m */; };
+		2AB1D312197F939B00AF01B3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1D30C197F939B00AF01B3 /* Roboto-Medium.ttf */; };
+		2AB1D313197F939B00AF01B3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1D30D197F939B00AF01B3 /* Roboto-Regular.ttf */; };
 		2ACB845918E1F03900D270DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB845818E1F03900D270DB /* Images.xcassets */; };
 		2AD757B31802E54700D404B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD757B21802E54700D404B2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +83,17 @@
 		2A70999B17D76BA30015097C /* ProxyfierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyfierTests.m; sourceTree = "<group>"; };
 		2A7099CF17D789030015097C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2A7099E917D792A50015097C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2AB1D302197F939B00AF01B3 /* GRGlassAccessoryWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRGlassAccessoryWindow.h; sourceTree = "<group>"; };
+		2AB1D303197F939B00AF01B3 /* GRGlassAccessoryWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRGlassAccessoryWindow.m; sourceTree = "<group>"; };
+		2AB1D304197F939B00AF01B3 /* GRGlassThemeWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRGlassThemeWidget.h; sourceTree = "<group>"; };
+		2AB1D305197F939B00AF01B3 /* GRGlassThemeWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRGlassThemeWidget.m; sourceTree = "<group>"; };
+		2AB1D306197F939B00AF01B3 /* GRGlassWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRGlassWindow.h; sourceTree = "<group>"; };
+		2AB1D307197F939B00AF01B3 /* GRGlassWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRGlassWindow.m; sourceTree = "<group>"; };
+		2AB1D308197F939B00AF01B3 /* NSWindow+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Screenshot.h"; sourceTree = "<group>"; };
+		2AB1D309197F939B00AF01B3 /* NSWindow+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Screenshot.m"; sourceTree = "<group>"; };
+		2AB1D30A197F939B00AF01B3 /* PrivateStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateStuff.h; sourceTree = "<group>"; };
+		2AB1D30C197F939B00AF01B3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		2AB1D30D197F939B00AF01B3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2ACB845818E1F03900D270DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AD757B21802E54700D404B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -116,6 +133,7 @@
 		2A192B4318EC386000A6A56E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2AB1D301197F939B00AF01B3 /* GRGlassWindow Class */,
 				2A192B4918EC386000A6A56E /* EPProxyModify */,
 				2A192B4C18EC386000A6A56E /* GCNetworkReachability */,
 				2A192B4F18EC386000A6A56E /* INAppStoreWindow */,
@@ -269,6 +287,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2AB1D301197F939B00AF01B3 /* GRGlassWindow Class */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D302197F939B00AF01B3 /* GRGlassAccessoryWindow.h */,
+				2AB1D303197F939B00AF01B3 /* GRGlassAccessoryWindow.m */,
+				2AB1D304197F939B00AF01B3 /* GRGlassThemeWidget.h */,
+				2AB1D305197F939B00AF01B3 /* GRGlassThemeWidget.m */,
+				2AB1D306197F939B00AF01B3 /* GRGlassWindow.h */,
+				2AB1D307197F939B00AF01B3 /* GRGlassWindow.m */,
+				2AB1D308197F939B00AF01B3 /* NSWindow+Screenshot.h */,
+				2AB1D309197F939B00AF01B3 /* NSWindow+Screenshot.m */,
+				2AB1D30A197F939B00AF01B3 /* PrivateStuff.h */,
+				2AB1D30B197F939B00AF01B3 /* Resources */,
+			);
+			path = "GRGlassWindow Class";
+			sourceTree = "<group>";
+		};
+		2AB1D30B197F939B00AF01B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D30C197F939B00AF01B3 /* Roboto-Medium.ttf */,
+				2AB1D30D197F939B00AF01B3 /* Roboto-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,6 +385,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB1D313197F939B00AF01B3 /* Roboto-Regular.ttf in Resources */,
+				2AB1D312197F939B00AF01B3 /* Roboto-Medium.ttf in Resources */,
 				2A70997C17D76BA10015097C /* InfoPlist.strings in Resources */,
 				2A70998217D76BA10015097C /* Credits.rtf in Resources */,
 				2ACB845918E1F03900D270DB /* Images.xcassets in Resources */,
@@ -383,9 +429,13 @@
 				2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */,
 				2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */,
 				2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */,
+				2AB1D30E197F939B00AF01B3 /* GRGlassAccessoryWindow.m in Sources */,
 				2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */,
 				2A192B7618EC386000A6A56E /* Proxy.m in Sources */,
 				2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */,
+				2AB1D30F197F939B00AF01B3 /* GRGlassThemeWidget.m in Sources */,
+				2AB1D310197F939B00AF01B3 /* GRGlassWindow.m in Sources */,
+				2AB1D311197F939B00AF01B3 /* NSWindow+Screenshot.m in Sources */,
 				2A70998517D76BA20015097C /* CMRAppDelegate.m in Sources */,
 				2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */,
 			);

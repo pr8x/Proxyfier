@@ -8,10 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ProxyListFetcher.h"
+#import "GRGlassWindow.h"
 
-#import "ProxyListFetcher.h"
 #import "EPProxyModifiy.h"
-#import "GCNetworkReachability.h"
 
 @interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate> {
     BOOL proxyEnabled;
@@ -21,9 +20,10 @@
 }
 
 #pragma mark - @UI: Outlets
-@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet GRGlassWindow *window;
 @property (strong) IBOutlet NSTableView *ProxyList;
 @property (weak) IBOutlet NSButton *ActivateButton;
+@property (weak) IBOutlet NSView *toolbarView;
 
 - (void)RefreshProxies;
 - (IBAction)ToggleProxy:(id)sender;

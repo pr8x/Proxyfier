@@ -7,8 +7,7 @@
 //
 
 #import "CMRAppDelegate.h"
-#import "EPProxyModifiy.h"
-#import "INAppStoreWindow.h"
+
 
 @implementation CMRAppDelegate
 
@@ -25,19 +24,14 @@
     self.ProxyList.dataSource = PLF;
     
     [self RefreshProxies];
-
-    INAppStoreWindow *aWindow = (INAppStoreWindow*)[self window];
-    aWindow.titleBarHeight = 55;
-    aWindow.showsBaselineSeparator = NO;
-    aWindow.titleBarStartColor     = [NSColor colorWithCalibratedRed:0.995 green:0.990 blue:0.990 alpha:1.000];
-    aWindow.titleBarEndColor       = [NSColor whiteColor];
+    
+    
+    
+    self.window.subtitle = @"http://www.xroxy.com/proxyrss.xml";
+    self.window.accessoryView = self.toolbarView;
+    self.window.delegate = self;
 
     
-    aWindow.inactiveTitleBarEndColor       = [NSColor colorWithCalibratedWhite: 0.95 alpha: 1.0];
-    aWindow.inactiveTitleBarStartColor     = [NSColor colorWithCalibratedWhite: 0.8  alpha: 1.0];
-    aWindow.showsTitle = YES;
-    aWindow.showsBaselineSeparator = NO;
-    self.window.delegate = self;
     
 }
 

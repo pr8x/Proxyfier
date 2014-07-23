@@ -28,6 +28,10 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
     NSMutableArray * bind = [NSMutableArray new];
     
     [proxyLists enumerateObjectsUsingBlock:^(NSArray* currentList,NSUInteger index,BOOL* stop) {
+    
+        if ([currentList isKindOfClass:[NSNull class]])
+            return;
+        
         for (id element in currentList) {
             
             Proxy*proxy = [Proxy new];
@@ -56,10 +60,6 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
     Proxy *correspondingProxy = self.Proxies[row];
-<<<<<<< HEAD
-=======
-
->>>>>>> FETCH_HEAD
     return [correspondingProxy 
         valueForKey: [tableColumn identifier]];
     

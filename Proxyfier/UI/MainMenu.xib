@@ -649,19 +649,18 @@
         </menu>
         <customObject id="494" customClass="CMRAppDelegate">
             <connections>
-                <outlet property="ActivateButton" destination="757" id="764"/>
+                <outlet property="ActivateButton" destination="t08-O6-98C" id="mNa-OD-RyI"/>
                 <outlet property="ListRefreshView" destination="737" id="772"/>
                 <outlet property="ProxyList" destination="738" id="762"/>
+                <outlet property="toolbarView" destination="tFs-pI-AsL" id="Ria-ZE-8GI"/>
                 <outlet property="window" destination="735" id="761"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <window title="Proxyfier" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="735" customClass="INAppStoreWindow">
+        <window title="Proxyfier" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="735" customClass="GRGlassWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="305" y="212" width="577" height="281"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-            <value key="minSize" type="size" width="577" height="281"/>
-            <value key="maxSize" type="size" width="577" height="281"/>
             <view key="contentView" id="736">
                 <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -673,27 +672,27 @@
                             <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="joko" rowHeight="35" id="738">
+                                <tableView focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" selectionHighlightStyle="sourceList" alternatingRowBackgroundColors="YES" columnResizing="NO" multipleSelection="NO" autosaveName="joko" rowHeight="35" id="738">
                                     <rect key="frame" x="0.0" y="0.0" width="577" height="281"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="9" height="15"/>
-                                    <color key="backgroundColor" red="0.2196078431372549" green="0.45882352941176469" blue="0.84313725490196079" alpha="0.0" colorSpace="deviceRGB"/>
+                                    <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <tableColumns>
-                                        <tableColumn identifier="country" editable="NO" width="76.75390625" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
+                                        <tableColumn identifier="country" editable="NO" width="55" minWidth="10" maxWidth="3.4028234663852886e+38" id="745">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Country">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="746">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Text" id="YVw-Xx-RBD">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="host" editable="NO" width="106.33984375" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
+                                        <tableColumn identifier="host" editable="NO" width="33" minWidth="10" maxWidth="3.4028234663852886e+38" id="741">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Host">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -706,7 +705,7 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="port" editable="NO" width="95.73046875" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
+                                        <tableColumn identifier="port" editable="NO" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="742">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Port">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -714,12 +713,12 @@
                                             </tableHeaderCell>
                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="749">
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" red="0.52989477040816324" green="0.52989477040816324" blue="0.52989477040816324" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="type" editable="NO" width="121.41015625" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
+                                        <tableColumn identifier="type" editable="NO" width="34" minWidth="10" maxWidth="3.4028234663852886e+38" id="743">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Type">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -732,13 +731,13 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="reliability" width="132.3671875" minWidth="10" maxWidth="1000" headerToolTip="Indicates average uptime of server" id="kBF-Nj-giW">
+                                        <tableColumn identifier="reliability" width="380" minWidth="10" maxWidth="1000" headerToolTip="Indicates average uptime of server" id="kBF-Nj-giW">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Reliability">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <sliderCell key="dataCell" enabled="NO" state="on" alignment="left" maxValue="10000" doubleValue="5000" tickMarkPosition="above" numberOfTickMarks="5" sliderType="linear" id="rxp-q1-sMK"/>
+                                            <sliderCell key="dataCell" state="on" alignment="left" maxValue="10000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="fe2-ex-iZa"/>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                     </tableColumns>
@@ -757,35 +756,23 @@
                     </scrollView>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="50267444-7093-4DC1-96AB-54048EF7CD1D" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="751">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="753"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="754"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="756"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="752"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="755"/>
-                    <toolbarItem implicitItemIdentifier="E8796AF0-355D-4F10-8DAF-875BF802819A" label="Activate" paletteLabel="Activate" id="759">
-                        <nil key="toolTip"/>
-                        <size key="minSize" width="116" height="25"/>
-                        <size key="maxSize" width="116" height="25"/>
-                        <button key="view" verticalHuggingPriority="750" id="757">
-                            <rect key="frame" x="0.0" y="14" width="116" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <buttonCell key="cell" type="roundTextured" title="Activate" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="758">
-                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                <font key="font" metaFont="system"/>
-                            </buttonCell>
-                            <connections>
-                                <action selector="ToggleProxy:" target="494" id="763"/>
-                            </connections>
-                        </button>
-                    </toolbarItem>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="755"/>
-                    <toolbarItem reference="759"/>
-                </defaultToolbarItems>
-            </toolbar>
         </window>
+        <customView id="tFs-pI-AsL">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" id="t08-O6-98C">
+                    <rect key="frame" x="10" y="13" width="123" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundTextured" title="Activate" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tdJ-Vh-vyD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="ToggleProxy:" target="494" id="7sa-26-3TW"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
     </objects>
 </document>
