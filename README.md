@@ -1,7 +1,7 @@
 PROXYFIER UI
 =========
 
-A lightweight (UI) proxy service for Mac OSX. 
+A lightweight (UI) proxy application for Mac OSX. 
 > Proxies provided by http://www.xroxy.com/proxyrss.xml
 
 <img src="https://raw.githubusercontent.com/CodeMound/Proxyfier/master/Demo/demo.JPG"></img>
