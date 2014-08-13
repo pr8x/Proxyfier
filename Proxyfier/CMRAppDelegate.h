@@ -12,7 +12,7 @@
 
 #import "EPProxyModifiy.h"
 
-@interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate> {
+@interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,NSTableViewDelegate> {
     BOOL proxyEnabled;
     EPProxyModifiy*PM;
     ProxyListFetcher*PLF;

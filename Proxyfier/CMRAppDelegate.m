@@ -22,6 +22,7 @@
     
     [self.ProxyList setDoubleAction:@selector(ToggleProxy:)];
     self.ProxyList.dataSource = PLF;
+    self.ProxyList.delegate =self;
     
     [self RefreshProxies];
     
@@ -62,7 +63,15 @@
 
     [PLF Fetch];
     
-    self.window.subtitle = PLF.lastUpdated;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    NSLocale *locale = [[NSLocale alloc]
+                         initWithLocaleIdentifier:@"en_US_POSIX"];
+    [formatter setLocale:locale];
+    [formatter setDateFormat:@"EEE, dd MMM yyyy HH:mm:ss Z"];
+    NSDate* update = [formatter dateFromString:PLF.lastUpdated];
+    
+    self.window.subtitle = [NSString stringWithFormat:@"Update: %@",
+                            [update timeAgo]];
 
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
