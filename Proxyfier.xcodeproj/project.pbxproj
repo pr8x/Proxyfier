@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2A192B6D18EC386000A6A56E /* EPProxyModifiy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */; };
 		2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B4E18EC386000A6A56E /* GCNetworkReachability.m */; };
-		2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5118EC386000A6A56E /* INAppStoreWindow.m */; };
-		2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B5318EC386000A6A56E /* INWindowButton.m */; };
 		2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6018EC386000A6A56E /* XMLDictionary.m */; };
 		2A192B7618EC386000A6A56E /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6318EC386000A6A56E /* Proxy.m */; };
 		2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A192B6518EC386000A6A56E /* ProxyListFetcher.m */; };
@@ -35,6 +33,7 @@
 		2AB1D313197F939B00AF01B3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1D30D197F939B00AF01B3 /* Roboto-Regular.ttf */; };
 		2ACB845918E1F03900D270DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB845818E1F03900D270DB /* Images.xcassets */; };
 		2AD757B31802E54700D404B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD757B21802E54700D404B2 /* QuartzCore.framework */; };
+		2ADB9353199B67C700410A97 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB9351199B67C700410A97 /* NSDate+TimeAgo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +51,6 @@
 		2A192B4B18EC386000A6A56E /* EPProxyModifiy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPProxyModifiy.m; sourceTree = "<group>"; };
 		2A192B4D18EC386000A6A56E /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
 		2A192B4E18EC386000A6A56E /* GCNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
-		2A192B5018EC386000A6A56E /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
-		2A192B5118EC386000A6A56E /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
-		2A192B5218EC386000A6A56E /* INWindowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INWindowButton.h; sourceTree = "<group>"; };
-		2A192B5318EC386000A6A56E /* INWindowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INWindowButton.m; sourceTree = "<group>"; };
 		2A192B5F18EC386000A6A56E /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		2A192B6018EC386000A6A56E /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		2A192B6218EC386000A6A56E /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
@@ -96,6 +91,8 @@
 		2AB1D30D197F939B00AF01B3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2ACB845818E1F03900D270DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AD757B21802E54700D404B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2ADB9351199B67C700410A97 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		2ADB9352199B67C700410A97 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +130,11 @@
 		2A192B4318EC386000A6A56E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2ADB9352199B67C700410A97 /* NSDate+TimeAgo.h */,
+				2ADB9351199B67C700410A97 /* NSDate+TimeAgo.m */,
 				2AB1D301197F939B00AF01B3 /* GRGlassWindow Class */,
 				2A192B4918EC386000A6A56E /* EPProxyModify */,
 				2A192B4C18EC386000A6A56E /* GCNetworkReachability */,
-				2A192B4F18EC386000A6A56E /* INAppStoreWindow */,
 				2A192B5E18EC386000A6A56E /* XMLDictionary */,
 			);
 			path = Libraries;
@@ -158,17 +156,6 @@
 				2A192B4E18EC386000A6A56E /* GCNetworkReachability.m */,
 			);
 			path = GCNetworkReachability;
-			sourceTree = "<group>";
-		};
-		2A192B4F18EC386000A6A56E /* INAppStoreWindow */ = {
-			isa = PBXGroup;
-			children = (
-				2A192B5018EC386000A6A56E /* INAppStoreWindow.h */,
-				2A192B5118EC386000A6A56E /* INAppStoreWindow.m */,
-				2A192B5218EC386000A6A56E /* INWindowButton.h */,
-				2A192B5318EC386000A6A56E /* INWindowButton.m */,
-			);
-			path = INAppStoreWindow;
 			sourceTree = "<group>";
 		};
 		2A192B5E18EC386000A6A56E /* XMLDictionary */ = {
@@ -426,12 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A70997E17D76BA10015097C /* main.m in Sources */,
-				2A192B6F18EC386000A6A56E /* INAppStoreWindow.m in Sources */,
 				2A192B7718EC386000A6A56E /* ProxyListFetcher.m in Sources */,
-				2A192B7018EC386000A6A56E /* INWindowButton.m in Sources */,
 				2AB1D30E197F939B00AF01B3 /* GRGlassAccessoryWindow.m in Sources */,
 				2A192B7518EC386000A6A56E /* XMLDictionary.m in Sources */,
 				2A192B7618EC386000A6A56E /* Proxy.m in Sources */,
+				2ADB9353199B67C700410A97 /* NSDate+TimeAgo.m in Sources */,
 				2A192B6E18EC386000A6A56E /* GCNetworkReachability.m in Sources */,
 				2AB1D30F197F939B00AF01B3 /* GRGlassThemeWidget.m in Sources */,
 				2AB1D310197F939B00AF01B3 /* GRGlassWindow.m in Sources */,

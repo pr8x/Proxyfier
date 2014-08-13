@@ -7,6 +7,7 @@
 //
 
 #import "CMRAppDelegate.h"
+#import "NSDate+TimeAgo.h"
 
 
 @implementation CMRAppDelegate
@@ -14,25 +15,18 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    PM = [EPProxyModifiy new];
-    PLF = [ProxyListFetcher new];
+    PM = [[EPProxyModifiy alloc] init];
+    PLF = [[ProxyListFetcher alloc] init];
 
     NSLog(@"%@",@"Start App. ()");
-    
     
     [self.ProxyList setDoubleAction:@selector(ToggleProxy:)];
     self.ProxyList.dataSource = PLF;
     
     [self RefreshProxies];
     
-    
-    
-    self.window.subtitle = @"http://www.xroxy.com/proxyrss.xml";
     self.window.accessoryView = self.toolbarView;
     self.window.delegate = self;
-
-    
-    
 }
 
 - (IBAction)ToggleProxy:(id)sender {
@@ -67,6 +61,8 @@
 - (void)RefreshProxies {
 
     [PLF Fetch];
+    
+    self.window.subtitle = PLF.lastUpdated;
 
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];

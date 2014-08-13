@@ -11,7 +11,8 @@
 
 @interface ProxyListFetcher : NSObject <NSTableViewDataSource>
 
-@property (nonatomic,strong) NSMutableArray*Proxies;
+@property (nonatomic,strong) NSString* lastUpdated;
+@property (nonatomic,strong) NSArray*Proxies;
 
 /* Starts fetching proxies */
 -(void)Fetch;

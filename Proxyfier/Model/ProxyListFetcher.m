@@ -23,26 +23,25 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
                                                       error:NULL];
  
     NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLString:raw];
+    
+    self.lastUpdated = [xmlDoc stringValueForKeyPath:@"channel.lastBuildDate"];
 
     NSArray* proxyLists = [xmlDoc arrayValueForKeyPath:@"channel.item.prx:proxy"];
     NSMutableArray * bind = [NSMutableArray new];
     
     [proxyLists enumerateObjectsUsingBlock:^(NSArray* currentList,NSUInteger index,BOOL* stop) {
-    
-        if ([currentList isKindOfClass:[NSNull class]])
-            return;
         
-        for (id element in currentList) {
-            
-            Proxy*proxy = [Proxy new];
-            proxy.host = [element valueForKey:@"prx:ip"];
-            proxy.port = [element valueForKey:@"prx:port"];
-            proxy.type = [element valueForKey:@"prx:type"];
-            proxy.reliability = [[element valueForKey:@"prx:reliability"] integerValue];
-            proxy.country = [element valueForKey:@"prx:country_code"];
-            
-            [bind addObject:proxy];
-            
+        for (NSDictionary* element in currentList) {
+            if ([element isKindOfClass:[NSDictionary class]]) {
+                Proxy*proxy = [Proxy new];
+                proxy.host = [element valueForKey:@"prx:ip"];
+                proxy.port = [element valueForKey:@"prx:port"];
+                proxy.type = [element valueForKey:@"prx:type"];
+                proxy.reliability = [[element valueForKey:@"prx:reliability"] integerValue];
+                proxy.country = [element valueForKey:@"prx:country_code"];
+                
+                [bind addObject:proxy];
+            }
         }
         
     }];
@@ -60,10 +59,7 @@ NSString *rss = @"http://www.xroxy.com/proxyrss.xml";
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
     Proxy *correspondingProxy = self.Proxies[row];
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
     return [correspondingProxy 
         valueForKey: [tableColumn identifier]];
     
