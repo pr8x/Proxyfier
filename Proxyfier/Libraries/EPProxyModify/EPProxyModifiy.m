@@ -45,7 +45,7 @@
 
 
 
-- (void)changeProxySettingsWithAddress: (NSString *)address
+- (BOOL)changeProxySettingsWithAddress: (NSString *)address
                                  Port :(NSString *)port
                                   isON: (BOOL)isOn{
     
@@ -54,7 +54,8 @@
     
     if (_authRef == NULL) {
         
-        [self getAuthorization];
+        if (![self getAuthorization])
+            return NO;
     }
     
     
@@ -106,6 +107,8 @@
     SCPreferencesCommitChanges(prefRef);
     SCPreferencesApplyChanges(prefRef);
     SCPreferencesSynchronize(prefRef);
+    
+    return YES;
 }
 
 @end

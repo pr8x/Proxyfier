@@ -10,7 +10,7 @@
 
 @interface EPProxyModifiy : NSObject
 
-- (void)changeProxySettingsWithAddress: (NSString *)address
+- (BOOL)changeProxySettingsWithAddress: (NSString *)address
                                  Port :(NSString *)port
                                   isON: (BOOL)isOn;
 

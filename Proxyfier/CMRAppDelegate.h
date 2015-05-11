@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ProxyListFetcher.h"
-#import "GRGlassWindow.h"
+
 
 #import "EPProxyModifiy.h"
 
@@ -20,10 +20,10 @@
 }
 
 #pragma mark - @UI: Outlets
-@property (unsafe_unretained) IBOutlet GRGlassWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
 @property (strong) IBOutlet NSTableView *ProxyList;
 @property (weak) IBOutlet NSButton *ActivateButton;
-@property (weak) IBOutlet NSView *toolbarView;
+@property (weak) IBOutlet NSTextField *updateLabel;
 
 - (void)RefreshProxies;
 - (IBAction)ToggleProxy:(id)sender;

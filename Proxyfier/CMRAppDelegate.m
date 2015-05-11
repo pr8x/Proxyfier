@@ -26,9 +26,10 @@
     
     [self RefreshProxies];
     
-    self.window.accessoryView = self.toolbarView;
     self.window.delegate = self;
 }
+
+
 
 - (IBAction)ToggleProxy:(id)sender {
     
@@ -37,26 +38,27 @@
         return;
     
     if (proxyEnabled) {
-        [PM changeProxySettingsWithAddress:p.host Port:p.port isON:NO];
-        proxyEnabled = NO;
-        
-        [self.ActivateButton setTitle:@"Activate"];
-        [self.window setTitle:@"localhost"];
-        
-        currentProxy = p;
-        
-
+        if ([PM changeProxySettingsWithAddress:p.host Port:p.port isON:NO]) {
+            proxyEnabled = NO;
+            
+            [self.ActivateButton setTitle:@"Activate"];
+            [self.window setTitle:@"localhost"];
+            
+            currentProxy = p;
+        }
+    
     }else{
-        [PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES];
-        
-        proxyEnabled = YES;
-        [self.ActivateButton setTitle:@"Deactivate"];
-        [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
+        if ([PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES]) {
+            proxyEnabled = YES;
+            [self.ActivateButton setTitle:@"Deactivate"];
+            [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
 
-        currentProxy = nil;
+            currentProxy = nil;
+        }
     }
  
 }
+
 
 #pragma mark - Refresh
 - (void)RefreshProxies {
@@ -70,8 +72,7 @@
     [formatter setDateFormat:@"EEE, dd MMM yyyy HH:mm:ss Z"];
     NSDate* update = [formatter dateFromString:PLF.lastUpdated];
     
-    self.window.subtitle = [NSString stringWithFormat:@"Update: %@",
-                            [update timeAgo]];
+    self.updateLabel.stringValue = [update timeAgo];
 
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.ProxyList selectRowIndexes:indexSet byExtendingSelection:NO];
@@ -83,6 +84,7 @@
 -(void)windowWillClose:(NSNotification *)notification {
     if (currentProxy)
         [PM changeProxySettingsWithAddress:currentProxy.host Port:currentProxy.port isON:NO];
+
 }
 
 

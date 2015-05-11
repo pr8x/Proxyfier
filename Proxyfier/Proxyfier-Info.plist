@@ -27,7 +27,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Luis von der Eltz. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>UI</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
