@@ -4,7 +4,7 @@ PROXYFIER UI
 A lightweight (UI) proxy application for Mac OSX. 
 > Proxies provided by http://www.xroxy.com/proxyrss.xml
 
-<img src="https://raw.githubusercontent.com/CodeMound/Proxyfier/master/Demo/Bildschirmfoto%202015-05-11%20um%2020.05.32.JPG"></img>
+<img src="https://raw.githubusercontent.com/CodeMound/Proxyfier/master/Demo/Bildschirmfoto%202015-05-14%20um%2016.59.03.JPG"></img>
 
 # DON'T BE A DICK PUBLIC LICENSE
 
