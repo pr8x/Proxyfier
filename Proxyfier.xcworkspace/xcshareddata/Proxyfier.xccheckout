@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E7258C6C-BC46-4693-B314-86A8E20327AA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Proxyfier</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>69317031AC675DE2B15331DB52446C20ACD01BAF</key>
+		<string>https://github.com/CodeMound/Proxyfier.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Proxyfier.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>69317031AC675DE2B15331DB52446C20ACD01BAF</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CodeMound/Proxyfier.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>69317031AC675DE2B15331DB52446C20ACD01BAF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69317031AC675DE2B15331DB52446C20ACD01BAF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Proxyfier</string>
+		</dict>
+	</array>
+</dict>
+</plist>

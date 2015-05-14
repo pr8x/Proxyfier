@@ -29,12 +29,14 @@
         bgColor = [NSColor colorWithCalibratedRed:1.000 green:0.303 blue:0.324 alpha:0.820];
     }
     
+    
     NSIndexSet* selectedRowIndexes = [self selectedRowIndexes];
     if ([selectedRowIndexes containsIndex:row])
     {
         [bgColor setFill];
         NSRectFill([self rectOfRow:row]);
     }
+  
     [super drawRow:row clipRect:clipRect];
 }
 @end

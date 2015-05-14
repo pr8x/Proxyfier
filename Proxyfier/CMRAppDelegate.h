@@ -7,25 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ProxyListFetcher.h"
+#import "CMRWindowController.h"
 
+@interface CMRAppDelegate : NSObject{
 
-#import "EPProxyModifiy.h"
-
-@interface CMRAppDelegate : NSObject <NSApplicationDelegate,NSWindowDelegate,NSTableViewDelegate> {
-    BOOL proxyEnabled;
-    EPProxyModifiy*PM;
-    ProxyListFetcher*PLF;
-    Proxy* currentProxy;
+    CMRWindowController* wc;
+    
 }
 
-#pragma mark - @UI: Outlets
-@property (unsafe_unretained) IBOutlet NSWindow *window;
-@property (strong) IBOutlet NSTableView *ProxyList;
-@property (weak) IBOutlet NSButton *ActivateButton;
-@property (weak) IBOutlet NSTextField *updateLabel;
 
-- (void)RefreshProxies;
-- (IBAction)ToggleProxy:(id)sender;
 
 @end
