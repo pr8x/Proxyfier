@@ -6,6 +6,8 @@ A lightweight (UI) proxy application for Mac OSX.
 
 <img src="https://raw.githubusercontent.com/CodeMound/Proxyfier/master/Demo/Bildschirmfoto%202015-05-14%20um%2016.59.03.JPG"></img>
 
+Release v1.3 <a href="https://github.com/CodeMound/Proxyfier/blob/master/Release/Proxyfier.zip?raw=true">Download App</a>
+
 # DON'T BE A DICK PUBLIC LICENSE
 
 > Version 1, December 2009
