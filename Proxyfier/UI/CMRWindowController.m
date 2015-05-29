@@ -25,8 +25,9 @@
 
 #pragma mark - @NSWindowDelegate
 -(void)windowWillClose:(NSNotification *)notification {
-    if (currentProxy)
+    if (currentProxy) {
         [PM changeProxySettingsWithAddress:currentProxy.host Port:currentProxy.port isON:NO];
+    }
 }
 
 
@@ -45,7 +46,6 @@
     [self RefreshProxies];
     
     self.window.delegate = self;
-    
     
     // Force to show a titlebar icon
     [self.window setRepresentedURL:[NSURL URLWithString:@"."]];
@@ -84,7 +84,7 @@
         if ([PM changeProxySettingsWithAddress:p.host Port:p.port isON:YES]) {
             proxyEnabled = YES;
             [self.ActivateButton setTitle:@"Deactivate"];
-            [self.window setTitle:[NSString stringWithFormat:@"Proxyfier: %@:%@",p.host,p.port]];
+            [self.window setTitle:[NSString stringWithFormat:@"%@:%@",p.host,p.port]];
             
             [[self.window standardWindowButton:NSWindowDocumentIconButton] setImage:[NSImage imageNamed:@"green_status"]];
             

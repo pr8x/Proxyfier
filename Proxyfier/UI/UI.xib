@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CMRWindowController">
@@ -18,7 +18,7 @@
         <window title="Proxyfier" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="alertPanel" id="5s6-Fu-SRw">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="305" y="212" width="517" height="281"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <value key="minSize" type="size" width="517" height="281"/>
             <view key="contentView" id="8WG-Yu-4oa">
                 <rect key="frame" x="0.0" y="0.0" width="517" height="281"/>
@@ -89,13 +89,13 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="reliability" width="159" minWidth="10" maxWidth="1000" headerToolTip="Indicates average uptime of server" id="NbC-7l-tOG">
+                                        <tableColumn identifier="reliability" width="60" minWidth="10" maxWidth="1000" headerToolTip="Indicates average uptime of server" id="NbC-7l-tOG">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Reliability">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <levelIndicatorCell key="dataCell" state="on" alignment="left" doubleValue="5000" maxValue="10000" warningValue="3" criticalValue="5000" levelIndicatorStyle="relevancy" id="2i0-Ki-4ao">
+                                            <levelIndicatorCell key="dataCell" state="on" alignment="left" doubleValue="5000" maxValue="10000" levelIndicatorStyle="relevancy" id="2i0-Ki-4ao">
                                                 <font key="font" metaFont="system"/>
                                             </levelIndicatorCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
