@@ -17,7 +17,7 @@
     
     if (self)
     {
-        //...
+          self.window.delegate = self;
     }
     
     return self;
@@ -44,8 +44,6 @@
     self.ProxyList.delegate =self;
     
     [self RefreshProxies];
-    
-    self.window.delegate = self;
     
     // Force to show a titlebar icon
     [self.window setRepresentedURL:[NSURL URLWithString:@"."]];
